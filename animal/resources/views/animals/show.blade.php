@@ -113,7 +113,7 @@
                 </span>
             </div>
 
-            <!-- Habitat -->
+       
             <div class="bg-gray-50 rounded-xl p-4 border border-gray-100">
                 <p class="text-xs font-semibold text-gray-400 uppercase">Habitat</p>
                 <span class="inline-block mt-2 px-3 py-1 text-sm rounded-full bg-emerald-100 text-emerald-700 font-semibold">
@@ -124,7 +124,7 @@
         </div>
 
     </div>
-
+ 
     <!-- BACK -->
     <div class="mt-6">
         <a href="{{ route('animals.index') }}"
