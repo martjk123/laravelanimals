@@ -125,7 +125,6 @@
 
     </div>
  
-    <!-- BACK -->
     <div class="mt-6">
         <a href="{{ route('animals.index') }}"
            class="inline-flex items-center gap-2 text-sm text-gray-600 hover:text-gray-900 bg-white border border-gray-200 px-4 py-2 rounded-xl hover:bg-gray-50 transition">
