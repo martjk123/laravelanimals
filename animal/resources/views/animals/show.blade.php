@@ -68,7 +68,7 @@
     <!-- MAIN CARD -->
     <div class="bg-white border border-gray-200 rounded-2xl shadow-sm overflow-hidden">
 
-        <!-- HERO -->
+     
         <div class="bg-gradient-to-r from-emerald-500 to-teal-600 px-8 py-10">
 
             <div class="flex items-center gap-5">
