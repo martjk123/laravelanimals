@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MedVault Analytics — Organizational Chart</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { font-family: sans-serif; background: #fff; padding: 24px; }
+    .node { border-radius: 6px; border-width: 1.5px; border-style: solid; padding: 6px 10px; text-align: center; font-size: 11px; }
+    .t { font-weight: 700; font-size: 11px; line-height: 1.3; }
+    .s { font-size: 10px; font-weight: 400; margin-top: 2px; }
+    .n-exec   { background:#e8e4f7; border-color:#9b8fd4; color:#3d2f8a; }
+    .n-exec .s{ color:#6655b0; }
+    .n-csuite { background:#d8f0e8; border-color:#7ec8a4; color:#1a5c3a; }
+    .n-csuite .s{ color:#2e7d52; }
+    .n-dept   { background:#ddeef8; border-color:#7ab8dc; color:#1a4a6e; }
+    .n-dept .s{ color:#2a6090; }
+    .n-mgr    { background:#fae8e4; border-color:#e0a090; color:#7a2e1e; }
+    .n-mgr .s { color:#a03a25; }
+    .n-staff  { background:#f5f5f5; border-color:#c8c8c8; color:#3a3a3a; }
+    .n-staff .s{ color:#666; }
+    .vline { width:2px; background:#c8c8c8; margin:0 auto; }
+    .col   { display:flex; flex-direction:column; align-items:center; }
+    .swatch{ width:14px; height:14px; border-radius:3px; display:inline-block; flex-shrink:0; }
+  </style>
+</head>
+<body>
+<div style="min-width:920px;display:flex;flex-direction:column;align-items:center;">
+
+  <div class="node n-exec" style="min-width:180px">
+    <div class="t">Chief Executive Officer</div><div class="s">Elena Voss</div>
+  </div>
+  <div class="vline" style="height:20px"></div>
+
+  <div style="position:relative;width:2080px;">
+    <div style="position:absolute;top:0;left:calc(10% + 65px);right:calc(10% + 65px);height:2px;background:#c8c8c8;"></div>
+    <div style="display:flex;justify-content:space-between;padding:0 10%;">
+
+      <!-- COO -->
+      <div class="col" style="width:140px">
+        <div class="vline" style="height:20px"></div>
+        <div class="node n-csuite" style="width:130px"><div class="t">COO</div><div class="s">Marcus Osei</div></div>
+        <div class="vline" style="height:16px"></div>
+        <div class="node n-dept" style="width:130px"><div class="t">VP Operations</div><div class="s">James Pereira</div></div>
+        <div class="vline" style="height:16px"></div>
+        <div class="node n-mgr" style="width:130px"><div class="t">Client Svcs Mgr</div><div class="s">Omar Basit</div></div>
+        <div class="vline" style="height:16px"></div>
+        <div style="position:relative;display:flex;gap:4px;">
+          <div style="position:absolute;top:0;left:33px;right:33px;height:2px;background:#c8c8c8;"></div>
+          <div class="col"><div class="vline" style="height:2px"></div><div class="node n-staff" style="width:100px"><div class="t">Data Steward</div><div class="s">Amy Tran</div></div></div>
+          <div class="col"><div class="vline" style="height:2px"></div><div class="node n-staff" style="width:100px"><div class="t">Client Analyst</div><div class="s">Raj Pillai</div></div></div>
+        </div>
+      </div>
+
+      <!-- CTO -->
+      <div class="col" style="width:260px">
+        <div class="vline" style="height:20px"></div>
+        <div class="node n-csuite" style="width:130px"><div class="t">CTO</div><div class="s">Priya Nair</div></div>
+        <div class="vline" style="height:16px"></div>
+        <div style="position:relative;display:flex;gap:6px;width:100%;">
+          <div style="position:absolute;top:0;left:65px;right:65px;height:2px;background:#c8c8c8;"></div>
+          <div class="col" style="width:127px">
+            <div class="vline" style="height:2px"></div>
+            <div class="node n-dept" style="width:122px"><div class="t">Platform Eng.</div><div class="s">Sofia Brennan</div></div>
+            <div class="vline" style="height:16px"></div>
+            <div class="node n-mgr" style="width:122px"><div class="t">DevOps Lead</div><div class="s">Ines Kovacs</div></div>
+            <div class="vline" style="height:16px"></div>
+            <div style="position:relative;display:flex;gap:4px;">
+              <div style="position:absolute;top:0;left:30px;right:30px;height:2px;background:#c8c8c8;"></div>
+              <div class="col"><div class="vline" style="height:2px"></div><div class="node n-staff" style="width:100px"><div class="t">Cloud Eng.</div><div class="s">Will Santos</div></div></div>
+              <div class="col"><div class="vline" style="height:2px"></div><div class="node n-staff" style="width:100px"><div class="t">Sys Admin</div><div class="s">Hana Inoue</div></div></div>
+            </div>
+          </div>
+          <div class="col" style="width:527px">
+            <div class="vline" style="height:2px"></div>
+            <div class="node n-dept" style="width:122px"><div class="t">Data Science</div><div class="s">Anya Mirza</div></div>
+            <div class="vline" style="height:16px"></div>
+            <div class="node n-mgr" style="width:122px"><div class="t">Analytics Lead</div><div class="s">Chen Wei</div></div>
+            <div class="vline" style="height:16px"></div>
+            <div style="position:relative;display:flex;gap:4px;">
+              <div style="position:absolute;top:0;left:30px;right:30px;height:2px;background:#c8c8c8;"></div>
+              <div class="col"><div class="vline" style="height:2px"></div><div class="node n-staff" style="width:100px"><div class="t">ML Engineer</div><div class="s">K. Hoffmann</div></div></div>
+              <div class="col"><div class="vline" style="height:2px"></div><div class="node n-staff" style="width:100px"><div class="t">Data Analyst</div><div class="s">Ben Achebe</div></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CISO -->
+      <div class="col" style="width:130px">
+        <div class="vline" style="height:20px"></div>
+        <div class="node n-csuite" style="width:120px"><div class="t">CISO</div><div class="s">David Lim</div></div>
+        <div class="vline" style="height:16px"></div>
+        <div class="node n-dept" style="width:120px"><div class="t">InfoSec</div><div class="s">David Lim (dir.)</div></div>
+        <div class="vline" style="height:16px"></div>
+        <div class="node n-mgr" style="width:120px"><div class="t">Risk &amp; Audit Lead</div><div class="s">Tom Wiley</div></div>
+        <div class="vline" style="height:16px"></div>
+        <div style="position:relative;display:flex;gap:4px;">
+          <div style="position:absolute;top:0;left:30px;right:30px;height:2px;background:#c8c8c8;"></div>
+          <div class="col"><div class="vline" style="height:2px"></div><div class="node n-staff" style="width:100px"><div class="t">Compliance Analyst</div><div class="s">L. Mansouri</div></div></div>
+          <div class="col"><div class="vline" style="height:2px"></div><div class="node n-staff" style="width:100px"><div class="t">Privacy Officer</div><div class="s">Karl Jensen</div></div></div>
+        </div>
+      </div>
+
+      <!-- CFO -->
+      <div class="col" style="width:140px">
+        <div class="vline" style="height:20px"></div>
+        <div class="node n-csuite" style="width:130px"><div class="t">CFO</div><div class="s">Sandra Koch</div></div>
+        <div class="vline" style="height:16px"></div>
+        <div class="node n-dept" style="width:130px"><div class="t">Finance Director</div><div class="s">Leo Chang</div></div>
+        <div class="vline" style="height:16px"></div>
+        <div class="node n-mgr" style="width:130px"><div class="t">Accounts Manager</div><div class="s">Nina Boateng</div></div>
+        <div class="vline" style="height:16px"></div>
+        <div style="position:relative;display:flex;gap:4px;">
+          <div style="position:absolute;top:0;left:33px;right:33px;height:2px;background:#c8c8c8;"></div>
+          <div class="col"><div class="vline" style="height:2px"></div><div class="node n-staff" style="width:100px"><div class="t">Financial Analyst</div><div class="s">Diego Reyes</div></div></div>
+          <div class="col"><div class="vline" style="height:2px"></div><div class="node n-staff" style="width:100px"><div class="t">Billing Specialist</div><div class="s">Yuki Tanaka</div></div></div>
+        </div>
+      </div>
+
+      <!-- CCO -->
+      <div class="col" style="width:140px">
+        <div class="vline" style="height:20px"></div>
+        <div class="node n-csuite" style="width:130px"><div class="t">Chief Compliance</div><div class="s">Rachel Torres</div></div>
+        <div class="vline" style="height:16px"></div>
+        <div class="node n-dept" style="width:130px"><div class="t">HIPAA/Legal Mgr</div><div class="s">Fatima Al-Rashid</div></div>
+        <div class="vline" style="height:16px"></div>
+        <div class="node n-mgr" style="width:130px"><div class="t">Compliance Mgr</div><div class="s">Rachel Torres</div></div>
+        <div class="vline" style="height:16px"></div>
+        <div style="position:relative;display:flex;gap:4px;">
+          <div style="position:absolute;top:0;left:33px;right:33px;height:2px;background:#c8c8c8;"></div>
+          <div class="col"><div class="vline" style="height:2px"></div><div class="node n-staff" style="width:100px"><div class="t">Audit Specialist</div><div class="s">Tom Wiley</div></div></div>
+          <div class="col"><div class="vline" style="height:2px"></div><div class="node n-staff" style="width:100px"><div class="t">Risk Analyst</div><div class="s">Leila Mansouri</div></div></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Legend -->
+  <div style="display:flex;gap:20px;flex-wrap:wrap;margin-top:24px;padding:12px 16px;border:1px solid #e0e0e0;border-radius:8px;font-size:11px;color:#444;">
+    <span style="display:flex;align-items:center;gap:6px;"><span class="swatch" style="background:#e8e4f7;border:1.5px solid #9b8fd4;"></span>Executive</span>
+    <span style="display:flex;align-items:center;gap:6px;"><span class="swatch" style="background:#d8f0e8;border:1.5px solid #7ec8a4;"></span>C-Suite</span>
+    <span style="display:flex;align-items:center;gap:6px;"><span class="swatch" style="background:#ddeef8;border:1.5px solid #7ab8dc;"></span>Dept. Head</span>
+    <span style="display:flex;align-items:center;gap:6px;"><span class="swatch" style="background:#fae8e4;border:1.5px solid #e0a090;"></span>Manager / Lead</span>
+    <span style="display:flex;align-items:center;gap:6px;"><span class="swatch" style="background:#f5f5f5;border:1.5px solid #c8c8c8;"></span>Front-line Staff</span>
+  </div>
+
+</div>
+</body>
+</html>
