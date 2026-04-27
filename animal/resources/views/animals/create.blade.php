@@ -39,7 +39,7 @@
         </p>
     </div>
 
-    <!-- FORM CARD -->
+    
     <div class="bg-white border border-gray-200 shadow-sm rounded-2xl p-8">
 
         <form action="{{ route('animals.store') }}" method="POST">
