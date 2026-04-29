@@ -62,10 +62,7 @@ class AnimalController extends Controller
         return view('animals.show', compact('animal'));
     }
 
-    /**
-     * Show the form for editing the specified animal.
-     * GET /animals/{id}/edit
-     */
+
     public function edit($id)
     {
         $animal = Animal::find($id);
