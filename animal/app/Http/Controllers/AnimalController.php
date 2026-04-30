@@ -46,10 +46,7 @@ class AnimalController extends Controller
             ->with('success', 'Animal record created successfully.');
     }
 
-    /**
-     * Display the specified animal.
-     * GET /animals/{id}
-     */
+
     public function show($id)
     {
         $animal = Animal::find($id);
